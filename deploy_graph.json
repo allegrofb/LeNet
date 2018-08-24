@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_1", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_2", 
+      "inputs": []
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d0", 
+      "attrs": {
+        "channels": "20", 
+        "dilation": "[1L, 1L]", 
+        "groups": "1", 
+        "kernel_size": "[5L, 5L]", 
+        "strides": "[1L, 1L]", 
+        "use_bias": "True"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0], [2, 0, 0]]
+    }, 
+    {
+      "op": "max_pool2d", 
+      "name": "max_pool2d0", 
+      "attrs": {
+        "ceil_mode": "True", 
+        "padding": "[0L, 0L]", 
+        "pool_size": "[2L, 2L]", 
+        "strides": "[2L, 2L]"
+      }, 
+      "inputs": [[3, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_3", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_4", 
+      "inputs": []
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d1", 
+      "attrs": {
+        "channels": "50", 
+        "dilation": "[1L, 1L]", 
+        "groups": "1", 
+        "kernel_size": "[5L, 5L]", 
+        "strides": "[1L, 1L]", 
+        "use_bias": "True"
+      }, 
+      "inputs": [[4, 0, 0], [5, 0, 0], [6, 0, 0]]
+    }, 
+    {
+      "op": "max_pool2d", 
+      "name": "max_pool2d1", 
+      "attrs": {
+        "ceil_mode": "True", 
+        "padding": "[0L, 0L]", 
+        "pool_size": "[2L, 2L]", 
+        "strides": "[2L, 2L]"
+      }, 
+      "inputs": [[7, 0, 0]]
+    }, 
+    {
+      "op": "flatten", 
+      "name": "flatten0", 
+      "inputs": [[8, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_5", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_6", 
+      "inputs": []
+    }, 
+    {
+      "op": "dense", 
+      "name": "dense0", 
+      "attrs": {
+        "units": "500", 
+        "use_bias": "True"
+      }, 
+      "inputs": [[9, 0, 0], [10, 0, 0], [11, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu0", 
+      "inputs": [[12, 0, 0]]
+    }, 
+    {
+      "op": "flatten", 
+      "name": "flatten1", 
+      "inputs": [[13, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_7", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "_param_8", 
+      "inputs": []
+    }, 
+    {
+      "op": "dense", 
+      "name": "dense1", 
+      "attrs": {
+        "units": "10", 
+        "use_bias": "True"
+      }, 
+      "inputs": [[14, 0, 0], [15, 0, 0], [16, 0, 0]]
+    }, 
+    {
+      "op": "flatten", 
+      "name": "flatten2", 
+      "inputs": [[17, 0, 0]]
+    }, 
+    {
+      "op": "softmax", 
+      "name": "softmax0", 
+      "inputs": [[18, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [0, 1, 2, 5, 6, 10, 11, 15, 16], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    8, 
+    9, 
+    10, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    18, 
+    19, 
+    20
+  ], 
+  "heads": [[19, 0, 0]]
+}
